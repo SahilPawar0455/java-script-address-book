@@ -15,5 +15,11 @@ class Contact {
     }
   }
   
-  let contact = new Contact("Sahil","Pawar","Chiplun","Ratnagiri","MH",415601,7350310455,"sahilpawar1004@gmail.com");
-  console.log(contact.toString());
+  let contactList = new Array();
+  let contact1 = new Contact("Sahil","Pawar","Chiplun","Ratnagiri","MH",415601,7350310455,"sahilpawar1004@gmail.com");
+  let contact2 = new Contact("Sai","Patil","karad","Satara","MH",415901,7350310466,"saipatil1004@gmail.com");
+  contactList.push(contact1);
+  contactList.push(contact2);
+  for (let i = 0; i < contactList.length; i++) {
+      console.log(contactList[i]);   
+  }
